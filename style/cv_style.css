@@ -1,0 +1,161 @@
+body {
+    background-color: #3F3B3B;
+    font-family: Georgia;
+    overflow-x: hidden;
+    color: #000035;
+}
+
+@media screen and (max-width: 768px) {
+    p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+}
+
+nav {
+    background-color: #000035;
+    border-radius: 0 0 10px 10px;
+}
+
+#navPageButtons li {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.social-icon {
+    margin-right: 30px;
+    transition: box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+}
+
+#background-photo {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+#background-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+
+.main_container {
+    position: relative;
+    top: 105vh;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    animation: slideUp 1s ease-out forwards;
+}
+
+header {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+p, ul {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+ul {
+    padding-left: 20px;
+}
+
+.contact-info {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contact-info span {
+    margin: 0 15px;
+}
+#span-first {
+    margin: 0 22px;
+}
+
+#personal_profile {
+    text-align: justify;
+}
+
+.core-skills, .education, .experience, .additional-activities, .languages, .interests {
+    margin-bottom: 20px;
+}
+
+.cv-list {
+    position: relative;
+    left: 7%;
+}
+
+.skills-list, .languages-list, .interests-list {
+    padding: 10px;
+}
+
+.skills-list li, .languages-list li, .interests-list li {
+    margin-bottom: 10px;
+}
+
+.skills-list, .languages-list, .interests-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.with-date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@keyframes slideUp {
+    from {
+        bottom: 105vh;
+        opacity: 0;
+    }
+    to {
+        top: 12vh;
+        opacity: 1;
+    }
+}

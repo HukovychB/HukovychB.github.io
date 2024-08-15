@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="../style/projects.css" rel="stylesheet">
+        <link rel="icon" href="../media/icons/project.ico" type="image/x-icon">
+        <title>Cheap Flights Project</title>
+        <script src="project_script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navPageButtons">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html" id="home-button">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html#portfolio" id="portfolio-button">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../cv.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact" id="contact-button">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav" id="navSocial">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/HukovychB" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/github.png" alt="GitHub" class="social-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/bohdan-hukovych-a9507b1a6/" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/linkedin.ico" alt="LinkedIn" class="social-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100070235464534" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/facebook.ico" alt="Facebook" class="social-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/jestervalz/" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/instagram.ico" alt="Instagram" class="social-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div id="background-photo">
+            <img src="../media/photos/telegram-flight-background.jpg" alt="Background-photo">
+        </div> -->
+        <video class="video-background" autoplay muted loop style="background-image: url('../media/photos/telegram-flight-background.jpg');">
+            <source src="../media/photos/flight_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="above-video"></div>
+        <div class="main-text">
+            <h1><b>Welcome to Cheap Flights Bot Project!</b></h1>
+            <a href="https://github.com/HukovychB/Cheap-Flights-Telegram-Bot" target="_blank" rel="noopener noreferrer">
+                <img src="../media/icons/github.png" alt="GitHub" class="github-icon">
+            </a>
+            <p style="animation: fadeInUpLeft 2s ease-in-out;">This project is a Telegram bot helping users search for cheap flights</p><br>
+            <p style="animation: fadeInUpRight 2s ease-in-out;">It interacts with users to collect flight search parameters, performs the search using a scraping script, and presents the results within Telegram</p>
+        </div>
+        <button id="scrollDownButton" class="scroll-down-button">
+            <span>SCROLL DOWN</span>
+            <span class="scroll-down-arrows">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </span>
+        </button>
+        <div class="project-description-container" id="project-description">
+            <div id="project-description-scroll">
+                <h2><b>Project Overview</b></h2>
+                <div id="container-image" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="d-block w-100 video-carousel" poster="../media/photos/demo-video-preview.png" controls>
+                                <source src="../media/photos/flight_video_demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#container-image" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#container-image" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
+                <h2>Description</h2>
+                <p>This Telegram bot helps users find budget flights using web scraping. It interacts with users to collect flight search parameters, performs the search using a scraping script, and presents the results within Telegram. The bot can handle one-way and round-trip flights and allows users to specify flexible travel dates and type of flights (direct or with stops). Finally, it allows users to set an automated search that is conducted at specified time interval.</p>
+                <p>Visit <a href="https://github.com/HukovychB/Cheap-Flights-Telegram-Bot" target="_blank">GitHub page</a> of this project for more information.</p><br>
+
+                <h2>Features and Usage</h2>
+                <ul>
+                    <li><strong>Search for one-way or round-trip flights:</strong> Users can choose between one-way and round-trip flight searches.</li>
+                    <li><strong>Flexible date search:</strong> Users can specify exact dates or allow for more flexible travel dates including an option "Anytime".</li>
+                    <li><strong>Filter by stops:</strong> Users can choose between direct flights, flights with one stop, or flights with up to two stops.</li>
+                    <li><strong>Automated search repetition:</strong> Users can set up automated searches at regular intervals.</li>
+                    <li><strong>Display all relevant information about the cheapest flights:</strong> The search results are sorted by price and display information such as price, departure date, departure time, arrival time, airlines and number of stops.</li>
+                </ul><br>
+
+                <h2>Setup</h2>
+
+                <h3>1. Install Dependencies</h3>
+                <p>Make sure you have Python installed, then install the required Python libraries using pip:</p>
+                <pre><code>pip install -r requirements.txt</code></pre><br>
+
+                <h3>2. Download ChromeDriver</h3>
+                <p>Download ChromeDriver that matches your version of Google Chrome from ChromeDriver download page. Place the chromedriver executable in your system's PATH or in the project directory.</p><br>
+
+                <h3>3. Configure the Bot</h3>
+                <p>Replace the BOT_KEY placeholder with your actual Telegram bot API key. You can obtain this key by creating a bot on Telegram via BotFather.</p>
+
+                <p>In the bot.py file, replace:</p>
+                <pre><code>BOT_KEY: Final = "YOUR_BOT_API_KEY"</code></pre>
+                <p>with your actual bot API key that you can obtain from <em>@BotFather</em> within Telegram.</p><br>
+
+                <h3>4. Running the Bot</h3>
+                <p>To start the bot, simply run the following command:</p>
+                <pre><code>python project.py</code></pre>
+                <p>The bot will be working until it is stopped in the terminal.</p><br>
+
+                <h2>How to use</h2>
+
+                <h3>Start the Bot</h3>
+                <p>To start using the bot, send the <code>/start</code> command to the bot in Telegram. It will provide instructions on how to begin a flight search.</p><br>
+
+                <h3>Search for Flights</h3>
+                <ol>
+                    <li><strong>Initiate Search</strong>: Send the <code>/search</code> command.</li>
+                    <li><strong>Choose Flight Type</strong>: Select between "One-way" or "Round-trip".</li>
+                    <li><strong>Enter Details</strong>:
+                        <ul>
+                            <li><strong>Departure city</strong>: format: city-country</li>
+                            <li><strong>Destination city</strong>: format: city-country</li>
+                            <li><strong>Desired departure date</strong>: format YYYY-MM-DD or "Anytime" for flexible dates</li>
+                            <li><strong>Specify Stops</strong>: Choose between direct flights, flights with one stop, or flights with up to two stops.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Receive Results</strong>: The bot will scrape flight data and send the results. You can also set automated search repetition if desired.</li>
+                </ol><br>
+
+                <h2>Code Structure</h2>
+
+                <h3><strong>'scraper.py'</strong></h3>
+                <p>This file contains functions for scraping flight data using Selenium and BeautifulSoup. Key functions include:</p>
+                <ul>
+                    <li><strong>find_cheap_oneway_flights(flight_info: dict) -> List[Dict]</strong>: Finds and returns a list of cheap one-way flights based on the provided search parameters.</li>
+                </ul><br>
+
+                <h3><strong>'project.py'</strong></h3>
+                <p>This file sets up and manages the Telegram bot using Telebot. It handles user interactions and coordinates with the scraper to provide flight search results. Key components include:</p>
+                <ul>
+                    <li>Command handlers for <code>/start, /search, and /stop</code>.</li>
+                    <li>Callback handlers for user interactions during the search process.</li>
+                    <li>Functions for validating input and managing automated search repetition.</li>
+                </ul><br>
+
+                <h2>Licence</h2>
+                <p>This project is licensed and prohibits any distribution or commercial use.</p>
+
+            </div>
+        </div>
+    </body>
+</html>

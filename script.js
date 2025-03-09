@@ -39,51 +39,52 @@ function debounce(func, wait) {
 window.onload = function() {
 
     // AUTOMATED SCROLLING
-    let lastScrollPosition = 0;
+    if (window.innerWidth > 768) { // Check if the device is not a phone
+        let lastScrollPosition = 0;
 
-    window.addEventListener('scroll', debounce(function() {
-        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        const cards = document.querySelectorAll('#card-grid .card-style');
-        // Scroll to the portfolio container
-        if (scrollPosition > 0 && scrollPosition < document.getElementById('portfolio').offsetTop && scrollPosition > lastScrollPosition) {
-            document.getElementById('portfolio').scrollIntoView({behavior: "smooth"});
-            document.getElementById('container-image').style.animation = "slideInLeftBack 1s ease-out forwards";
-            document.getElementById('container-info').style.animation = "slideInRightBack 1s ease-out forwards";
-            cards.forEach(card => {
-                card.style.animation = "appear 1s ease-out forwards";
-            });
-        }
-        // Scroll to the top of the page
-        else if (scrollPosition > 0 && scrollPosition < document.getElementById('portfolio').offsetTop && scrollPosition < lastScrollPosition) {
-            window.scrollTo({ top: 0, behavior: "smooth" });
-            document.getElementById('container-image').style.animation = "slideInLeft 1s ease-out forwards";
-            document.getElementById('container-info').style.animation = "slideInRight 1s ease-out forwards";
-            cards.forEach(card => {
-                card.style.animation = "disappear 0.5s ease-out forwards";
-            });
-        }
-        // Scroll to contact
-        else if (scrollPosition + window.innerHeight > document.getElementById('portfolio').offsetTop + document.getElementById('portfolio').offsetHeight + 1 && scrollPosition > lastScrollPosition) {
-            document.getElementById('contact').scrollIntoView({behavior: "smooth"});
-            document.getElementById('contact-form-container').style.animation = "slideInLeft 1s ease-out forwards";
-            document.getElementById('contact-photo').style.animation = "slideInRight 1s ease-out forwards";
-            cards.forEach(card => {
-                card.style.animation = "disappear 0.5s ease-out forwards";
-            });
-        }
-        // Scroll back to portfolio from contact
-        else if (scrollPosition != 0 && scrollPosition < lastScrollPosition && scrollPosition < document.getElementById('contact').offsetTop){
-            document.getElementById('portfolio').scrollIntoView({behavior: "smooth"});
-            document.getElementById('contact-form-container').style.animation = "slideInLeftBack 1s ease-out forwards";
-            document.getElementById('contact-photo').style.animation = "slideInRightBack 1s ease-out forwards";
-            cards.forEach(card => {
-                card.style.animation = "appear 1s ease-out forwards";
-            });
-        }
+        window.addEventListener('scroll', debounce(function() {
+            const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+            const cards = document.querySelectorAll('#card-grid .card-style');
+            // Scroll to the portfolio container
+            if (scrollPosition > 0 && scrollPosition < document.getElementById('portfolio').offsetTop && scrollPosition > lastScrollPosition) {
+                document.getElementById('portfolio').scrollIntoView({behavior: "smooth"});
+                document.getElementById('container-image').style.animation = "slideInLeftBack 1s ease-out forwards";
+                document.getElementById('container-info').style.animation = "slideInRightBack 1s ease-out forwards";
+                cards.forEach(card => {
+                    card.style.animation = "appear 1s ease-out forwards";
+                });
+            }
+            // Scroll to the top of the page
+            else if (scrollPosition > 0 && scrollPosition < document.getElementById('portfolio').offsetTop && scrollPosition < lastScrollPosition) {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+                document.getElementById('container-image').style.animation = "slideInLeft 1s ease-out forwards";
+                document.getElementById('container-info').style.animation = "slideInRight 1s ease-out forwards";
+                cards.forEach(card => {
+                    card.style.animation = "disappear 0.5s ease-out forwards";
+                });
+            }
+            // Scroll to contact
+            else if (scrollPosition + window.innerHeight > document.getElementById('portfolio').offsetTop + document.getElementById('portfolio').offsetHeight + 1 && scrollPosition > lastScrollPosition) {
+                document.getElementById('contact').scrollIntoView({behavior: "smooth"});
+                document.getElementById('contact-form-container').style.animation = "slideInLeft 1s ease-out forwards";
+                document.getElementById('contact-photo').style.animation = "slideInRight 1s ease-out forwards";
+                cards.forEach(card => {
+                    card.style.animation = "disappear 0.5s ease-out forwards";
+                });
+            }
+            // Scroll back to portfolio from contact
+            else if (scrollPosition != 0 && scrollPosition < lastScrollPosition && scrollPosition < document.getElementById('contact').offsetTop){
+                document.getElementById('portfolio').scrollIntoView({behavior: "smooth"});
+                document.getElementById('contact-form-container').style.animation = "slideInLeftBack 1s ease-out forwards";
+                document.getElementById('contact-photo').style.animation = "slideInRightBack 1s ease-out forwards";
+                cards.forEach(card => {
+                    card.style.animation = "appear 1s ease-out forwards";
+                });
+            }
 
-        // Update scroll position
-        lastScrollPosition = scrollPosition;
-    }, 30));
+            // Update scroll position
+            lastScrollPosition = scrollPosition;
+    }, 30))};
 
     // FIXES SMALL BUG AT THE BOTTOM OF THE PAGE
     window.addEventListener('scroll', function() {

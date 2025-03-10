@@ -79,13 +79,24 @@ nav {
     animation: slideInRight 2s ease-out forwards;
 }
 
+#container-info h1 {
+    font-size: 30px;
+    margin-right: 3px;
+}
 #container-info h6 {
-    margin-top: 25px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+#container-info h5 {
+    font-size: 15px;
+    margin-right: 2px;
 }
 
 #container-info p {
     margin: 0;
+    font-size: 12px;
 }
 
 #social {
@@ -96,11 +107,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5px;
 }
 
 .social-icon {
     margin-right: 30px;
     transition: box-shadow 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .social-icon {
+        margin-right: 18px;
+    }
+    
 }
 
 .social-icon:hover {
@@ -110,7 +129,7 @@ nav {
 #portfolio {
     position: relative;
     margin-top: 100vh;
-    height: 100vh;
+    height: 150vh;
     padding: 2%;
     background-color: #3F3B3B;
     color: #F2E1E1;
@@ -124,6 +143,7 @@ nav {
 
 #projects h2 {
     text-align: center;
+    margin-top: 20px;
 }
 
 #projects h5 {
@@ -181,9 +201,22 @@ nav {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .card-style {
+        width: 45%;
+        height: 500px;
+        margin-left: 3%;
+        text-align: center;
+    }
+
+    .card-style img {
+        height: 50%;
+    }
+}
+
 .card-body a {
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -234,11 +267,15 @@ nav {
 }
 
 #contact-form-container h5 {
-    margin-top: 2%;
+    margin-top: 20px;
 }
 
 #contact-form {
     height: 100%;
+}
+
+#contact-form button {
+    width: 40%;
 }
 
 #contact-photo {

@@ -55,7 +55,7 @@ window.onload = function() {
                 });
             }
             // Scroll to the top of the page
-            else if (scrollPosition > 0 && scrollPosition < document.getElementById('portfolio').offsetTop && scrollPosition < lastScrollPosition) {
+            else if (scrollPosition > 0 && scrollPosition < document.getElementById('portfolio').offsetTop  - 50 && scrollPosition < lastScrollPosition) {
                 window.scrollTo({ top: 0, behavior: "smooth" });
                 document.getElementById('container-image').style.animation = "slideInLeft 1s ease-out forwards";
                 document.getElementById('container-info').style.animation = "slideInRight 1s ease-out forwards";
@@ -64,7 +64,7 @@ window.onload = function() {
                 });
             }
             // Scroll to contact
-            else if (scrollPosition + window.innerHeight > document.getElementById('portfolio').offsetTop + document.getElementById('portfolio').offsetHeight + 1 && scrollPosition > lastScrollPosition) {
+            else if (scrollPosition + window.innerHeight > document.getElementById('portfolio').offsetTop + document.getElementById('portfolio').offsetHeight + 1 && !(scrollPosition > document.getElementById('contact').offsetTop) &&scrollPosition > lastScrollPosition) {
                 document.getElementById('contact').scrollIntoView({behavior: "smooth"});
                 document.getElementById('contact-form-container').style.animation = "slideInLeft 1s ease-out forwards";
                 document.getElementById('contact-photo').style.animation = "slideInRight 1s ease-out forwards";
@@ -73,7 +73,7 @@ window.onload = function() {
                 });
             }
             // Scroll back to portfolio from contact
-            else if (scrollPosition != 0 && scrollPosition < lastScrollPosition && scrollPosition < document.getElementById('contact').offsetTop){
+            else if (scrollPosition != 0 && scrollPosition < lastScrollPosition && scrollPosition < document.getElementById('contact').offsetTop - 50){
                 document.getElementById('portfolio').scrollIntoView({behavior: "smooth"});
                 document.getElementById('contact-form-container').style.animation = "slideInLeftBack 1s ease-out forwards";
                 document.getElementById('contact-photo').style.animation = "slideInRightBack 1s ease-out forwards";

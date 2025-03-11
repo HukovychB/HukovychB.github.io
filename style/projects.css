@@ -95,12 +95,12 @@ nav {
 }
 
 .main-text h1:hover {
-    color: rgba(105, 176, 255, 1);
+    color: rgb(57, 133, 221);
     text-shadow: 3px 3px 5px rgba(105, 176, 255, 0.6);
 }
 
 .main-text p:hover {
-    color: rgba(105, 176, 255, 1);
+    color: rgb(57, 133, 221, 1);
     text-shadow: 2px 2px 4px rgba(105, 176, 255, 0.6);
 }
 

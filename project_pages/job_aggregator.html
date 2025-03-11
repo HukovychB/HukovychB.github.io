@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="../style/projects.css" rel="stylesheet">
+        <link rel="icon" href="../media/icons/project.ico" type="image/x-icon">
+        <title>Job Aggregator Project</title>
+        <script src="project_script.js"></script>
+    </head>
+    <body>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navPageButtons">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html" id="home-button">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html#portfolio" id="portfolio-button">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../cv.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html#contact" id="contact-button">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav" id="navSocial">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/HukovychB" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/github.png" alt="GitHub" class="social-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/bohdan-hukovych-a9507b1a6/" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/linkedin.ico" alt="LinkedIn" class="social-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/profile.php?id=100070235464534" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/facebook.ico" alt="Facebook" class="social-icon">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/jestervalz/" target="_blank" rel="noopener noreferrer">
+                                <img src="../media/icons/instagram.ico" alt="Instagram" class="social-icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <div id="background-photo">
+            <img src="../media/photos/job_aggregator_background.jpg" alt="TA-photo">
+        </div> -->
+        <video class="video-background" autoplay muted loop style="background-image: url('../media/photos/job_aggregator_background.jpg');">
+            <source src="../media/photos/job_aggregator_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="above-video"></div>
+        <div class="main-text">
+            <h1><b>Welcome to Job Aggregator Web Project!</b></h1>
+            <a href="https://github.com/HukovychB/CZ-Job-Aggregator" target="_blank" rel="noopener noreferrer">
+                <img src="../media/icons/github.png" alt="GitHub" class="github-icon">
+            </a>
+            <p style="animation: fadeInUpLeft 2s ease-in-out;">This project is an interactive website built using Flask and Scrapy frameworks as well as MySQL database </p><br>
+            <p style="animation: fadeInUpRight 2s ease-in-out;">Allows users to search for relevant job vacancies from multiple sources such as LinkedIn and Indeed</p>
+        </div>
+        <button id="scrollDownButton" class="scroll-down-button">
+            <span>SCROLL DOWN</span>
+            <span class="scroll-down-arrows">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </span>
+        </button>
+        <div class="project-description-container" id="project-description">
+            <div id="project-description-scroll">
+                <h2><b>Project Overview</b></h2>
+                <div id="container-image" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="d-block w-100 video-carousel" poster="../media/photos/demo-video-preview.png" controls>
+                                <source src="../media/photos/Job-Aggregator-demo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#container-image" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#container-image" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
+                </div>
+                <hr>
+                <h6>Video Demo: <a href="https://youtu.be/heSWT1qmxPo">https://youtu.be/heSWT1qmxPo</a></h6>
+                <hr>
+                <h2>Description</h2>
+                <p>This is a website aggregator of job vacancies mainly focused on the Czech Republic. It is built using the <em>Flask</em> framework, which allows users to have secure personal accounts and navigate through various pages of the website. Initially, it offers users the option to log in or register for the website. After the authentication procedure, the main page is displayed, allowing users to search for jobs of their interest in their preferred location. Additionally, users can select from which websites they want to see vacancies.</p>
+                
+                <p><strong>The jobs are scraped from 5 different websites:</strong></p>
+                <ul>
+                    <li><strong><a href="https://www.linkedin.com">LinkedIn.com</a></strong></li>
+                    <li><strong><a href="https://www.indeed.com">Indeed.com</a></strong></li>
+                    <li><strong><a href="https://www.startupjobs.cz">Startupjobs.cz</a></strong></li>
+                    <li><strong><a href="https://www.jobs.cz">Jobs.cz</a></strong></li>
+                    <li><strong><a href="https://www.prace.cz">Prace.cz</a></strong></li>
+                </ul>
+                
+                <p>After the search procedure begins, the jobs are dynamically added to the pages as they are scraped. Each job card contains information about the job title, company name, location, the date it was published, and salary if available. Additionally, users can sort the job listings based on their published date to see the most recent listings.</p>
+                
+                <p>Users can add any job to their list of favorites. These can be found on the <em>My Jobs</em> page. There, for each job, different statuses can be set such as <em>Interesting, Applied, Interview Scheduled, Offer Received, and Denied/No Answer</em>. These favorite jobs, along with their statuses set by users, are stored in the database, so they are preserved even if a user logs out and subsequently comes back. Additionally, on the <em>My Jobs</em> page, users can filter jobs based on their statuses.</p>
+                
+                <h2>Declaration</h2>
+                <p><em>The author does not intend to use the scraped data for commercial purposes or any similar activities. The goals of this project are purely educational.</em></p>
+                
+                <h2>Features</h2>
+                <ul>
+                    <li><strong>User Authentication</strong>: Secure login and registration for users based on username and password. Passwords are stored in the database as hashes.</li>
+                    <li><strong>Job Search</strong>: Search for jobs based on keywords and location.</li>
+                    <li><strong>Website Selection</strong>: Choose specific websites among the 5 listed to scrape job listings from.</li>
+                    <li><strong>Dynamic Job Listings</strong>: Jobs are fetched from the database first, then dynamically scraped and added to the page.</li>
+                    <li><strong>Job Information</strong>: Each job card displays job title, company name, location, publication date, and salary (if available).</li>
+                    <li><strong>Sorting</strong>: Sort job listings by their publication date.</li>
+                    <li><strong>Favorites Management</strong>: Add and remove jobs from a list of favorites.</li>
+                    <li><strong>Status Tracking</strong>: Set and track statuses for favorite jobs.</li>
+                    <li><strong>Persistent Storage</strong>: Favorite jobs and statuses are stored in the database.</li>
+                    <li><strong>Filtering</strong>: Filter favorite jobs based on their statuses.</li>
+                </ul>
+                
+                <h2>Code Design</h2>
+                
+                <h3>Run.py</h3>
+                <p>This file runs the app.</p>
+                
+                <h3>Flask</h3>
+                <ul>
+                    <li>The Flask framework is used to develop the website.</li>
+                    <li>HTML pages are in <code>app/templates/</code>.</li>
+                    <li>Static files (CSS, JS, media) are in <code>app/static/</code>.</li>
+                    <li>Routes are defined in <code>app/routes.py</code>.</li>
+                    <li><code>app/__init__.py</code> initializes the Flask app.</li>
+                    <li>Most routes are protected using <code>@login_required</code>.</li>
+                </ul>
+                
+                <h3>Scrapy</h3>
+                <ul>
+                    <li>Scrapy is used for web scraping.</li>
+                    <li>Spiders are in <code>jobscraper/jobscraper/spiders/</code>.</li>
+                    <li>Scraped jobs are stored in the database.</li>
+                    <li>ScrapeOps middlewares are used to prevent detection.</li>
+                </ul>
+                
+                <h3>Database</h3>
+                <ul>
+                    <li><strong>MySQL</strong> is used.</li>
+                    <li>Tables:
+                        <ul>
+                            <li><code>users_logs</code>: Stores user credentials.</li>
+                            <li><code>jobs_active</code>: Stores active job listings.</li>
+                            <li><code>jobs_inactive</code>: Stores old job listings.</li>
+                            <li><code>favorite_jobs</code>: Stores user favorite jobs.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <h2>Licence</h2>
+                <p>This project is licensed and prohibits any distribution or commercial use. See the <a href="LICENCE.htm">LICENCE</a> file for details.</p>
+            </div>
+        </div>
+    </body>
+</html>

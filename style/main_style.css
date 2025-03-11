@@ -129,7 +129,7 @@ nav {
 #portfolio {
     position: relative;
     margin-top: 100vh;
-    height: 150vh;
+    height: 250vh;
     padding: 2%;
     background-color: #3F3B3B;
     color: #F2E1E1;
@@ -181,10 +181,11 @@ nav {
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 2%;
+    margin-left: 5%;
 }
 
 .card-style {
-    width: 32.5%;
+    width: 30%;
     height: 525px;
     background-color: #000035;
     padding: 0;
@@ -211,6 +212,10 @@ nav {
 
     .card-style img {
         height: 50%;
+    }
+
+    #card-grid {
+        margin-left: 0%;
     }
 }
 
